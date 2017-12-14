@@ -1,4 +1,4 @@
-public class Person {
+public class Person implements Greeter{
     public static void main(String[] args) {
 
 
@@ -43,5 +43,8 @@ public class Person {
     }
 
 
-
+    @Override
+    public String sayHello() {
+        return "Hello, " + this.firstName + " " + this.lastName;
+    }
 }
